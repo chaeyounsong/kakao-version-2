@@ -41,3 +41,12 @@
 margin : 20px 0px;
 
 }
+
+.find .friend__add-btn{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color : #f7f7f7;
+    padding : 13px;
+    border-radius : 10%;
+}
