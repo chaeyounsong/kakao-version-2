@@ -66,3 +66,7 @@
     font-size : 27px;
     margin-bottom : 6px;
 }
+
+.suggestion .suggestion__title{
+    opacity: 0.5;
+}
