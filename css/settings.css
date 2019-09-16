@@ -1,0 +1,35 @@
+
+.settings .settings__section{
+    border-top : 1px solid #f7f7f7;
+}
+
+.settings__setting .settings__icon{
+    font-size : 15px;
+    margin-right : 20px;
+}
+
+.settings__setting .settings__title{
+    font-size : 15px;
+    font-weight : 300;
+}
+
+.settings__section .settings__setting{
+    margin : 20px 0px;
+    position : relative;
+}
+
+.fa-volume-off{
+    font-size : 19px;
+}
+
+
+
+.settings__setting .settings__sub-info{
+    
+    text-align : right;
+    font-size : 14px;
+    opacity: 0.5;
+    position : absolute;
+    right : 0px;
+    
+}
