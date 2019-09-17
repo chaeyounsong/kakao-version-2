@@ -46,3 +46,12 @@
     font-size : 12px;
 }
 
+.chats__list .chats__chat{
+    margin-bottom : 12px;
+}
+
+.friend .chat__timestamp{
+    justify-content: center;
+    align-items: center;
+}
+
