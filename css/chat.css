@@ -8,21 +8,28 @@ html {
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
+.header-wrapper{
+    position : fixed;
+    top : 0;
+    width : 100%;
+    background-color : white;
+    padding : 10px 0px;
+    z-index: 1;
+    box-shadow : 0 2px 7px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+}
 
 .chats__body{
-    padding : 0px 0px;
-  
+    padding : 10px 0px;
+    padding-top : 137px;
+    background-color : #f4f4f4;
+    min-height : 130vh;
 }
+
   
   .chats__body .header,
   .chats__body .status-bar{
     padding : 0px 20px;
   }
-
-.chat-screen{
-    background-color : #f4f4f4;
-    min-height : 100vh;
-}
 
 .chat-screen .chat__messages{
     display : flex;
@@ -46,7 +53,7 @@ html {
     bottom : 50px;
     width : 80%;
     display : flex;
-    padding : 0px 20px;
+    padding : 5px 20px;
     background-color : #fcfcfc;
     border-radius : 40px;
     margin : 0 auto;
@@ -58,7 +65,7 @@ html {
 }
 
 .chat__write i{
-    font-size : 22px;
+    font-size : 20px;
 }
 
 .chat__write-column:nth-child(2){
@@ -74,14 +81,6 @@ html {
 .chat__write-column input{
     outline : none;
     font-size : 14px;
-}
-
-.header{
-    min-height: 30px;
-    position: sticky;
-    z-index: 1;
-    top: 0;
-    background-color : white;
 }
 
 .header .header__title{
@@ -180,4 +179,3 @@ html {
     padding-bottom : 10px;
     margin : -15px 0px;
 }
-
