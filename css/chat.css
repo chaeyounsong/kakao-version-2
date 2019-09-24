@@ -70,7 +70,20 @@ html {
     right : 10px;
 }
 
-
+@keyframes float{
+    0%{
+        transform: translateY(-40px);
+        box-shadow : 0 1px 6px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    }
+    50%{
+        transform : translateY(-80px);
+        box-shadow : 0 10px 20px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    }
+    100%{
+        transform: translateY(-40px);
+        box-shadow : 0 1px 6px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    }
+}
 
 .chat__write{
     margin : 0 auto;
@@ -91,6 +104,7 @@ html {
     transform : translateY(-100px);
     border-radius : 40px;
     box-shadow : 0 1px 6px -5px rgba(50,50,93,.25), 0 8px 16px -8px rgba(0,0,0,.3), 0 -6px 16px -6px rgba(0,0,0,.025);
+    animation: float 3s linear infinite forwards;
 }
 
 
@@ -209,4 +223,57 @@ html {
     font-size : 20px;
     padding-bottom : 10px;
     margin : -15px 0px;
+}
+
+@keyframes out__message-anim {
+
+    from{
+        opacity : 0;
+        transform : translateX(-100px);
+    }
+
+    to{
+        opacity : 1;
+        transform : none;
+    }
+
+}
+
+.out__message__content{
+    animation : out__message-anim 1s linear forwards;
+}
+
+@keyframes in__message-anim {
+    
+    from{
+        opacity : 0;
+        transform : translateX(100px);
+    }
+
+    to{
+        opacity : 1;
+        transform : none;
+    }
+}
+
+.in__message__content{
+    animation : in__message-anim 1.5s linear forwards;
+}
+
+@keyframes loading__message-anim {
+    
+    from{
+        opacity : 0;
+        
+    }
+
+    to{
+        opacity : 1;
+     
+    }
+}
+
+.loading__message__content{
+    animation : loading__message-anim 3.5s linear infinite forwards;
+   
 }
